@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fcd4fdc86e697749b4eb44d102b11c7, type: 3}
+  m_Name: Dark Wizard
+  m_EditorClassIdentifier: 
+  spriteList:
+  - {fileID: -5377305641423872630, guid: 58537da2c50b1074697dbad54c3fc166, type: 3}
+  - {fileID: 2608870584675541144, guid: 58537da2c50b1074697dbad54c3fc166, type: 3}
+  - {fileID: -8119032905726834140, guid: 58537da2c50b1074697dbad54c3fc166, type: 3}
+  - {fileID: -8754774932854075085, guid: 58537da2c50b1074697dbad54c3fc166, type: 3}
+  - {fileID: 3317367699375779649, guid: 58537da2c50b1074697dbad54c3fc166, type: 3}
+  - {fileID: -7652285648535279886, guid: 58537da2c50b1074697dbad54c3fc166, type: 3}
+  - {fileID: -4010162351673468194, guid: 58537da2c50b1074697dbad54c3fc166, type: 3}
+  - {fileID: -6234606567107971195, guid: 58537da2c50b1074697dbad54c3fc166, type: 3}
+  - {fileID: 2502528505931119134, guid: 58537da2c50b1074697dbad54c3fc166, type: 3}
+  - {fileID: -3207220382063096738, guid: 58537da2c50b1074697dbad54c3fc166, type: 3}
+  - {fileID: -649595768009106211, guid: 58537da2c50b1074697dbad54c3fc166, type: 3}
+  - {fileID: 6828700388465833848, guid: 58537da2c50b1074697dbad54c3fc166, type: 3}
+  - {fileID: -6063726930287294091, guid: 58537da2c50b1074697dbad54c3fc166, type: 3}
+  - {fileID: -1196704505806071437, guid: 58537da2c50b1074697dbad54c3fc166, type: 3}
+  - {fileID: -7837574412373550850, guid: 58537da2c50b1074697dbad54c3fc166, type: 3}
+  - {fileID: 506469361466028745, guid: 58537da2c50b1074697dbad54c3fc166, type: 3}
+  _keyPattern: .+_(.+)
+  _regexOptions: 0
