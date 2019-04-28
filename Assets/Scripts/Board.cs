@@ -6,17 +6,16 @@ using UnityEngine.Events;
 
 public class Board
 {
-    public Vector2Int Size { get; }
+    public BoundsInt Bounds { get; }
 
     private Dictionary<Vector2Int, BoardObject> objects = new Dictionary<Vector2Int, BoardObject>();
-    
+    private Dictionary<Vector2Int, BoardTile> tiles = new Dictionary<Vector2Int, BoardTile>();
+
     public event UnityAction<BoardObject, Vector2Int> ObjectPlaced;
 
-    public Board(int width, int height) : this(new Vector2Int(width, height)) { }
-
-    public Board(Vector2Int size)
+    public Board(BoundsInt bounds)
     {
-        Size = size;
+        Bounds = bounds;
     }
 
     public BoardObject GetObjectAt(Vector2Int position)
@@ -53,5 +52,24 @@ public class Board
         objects[position] = obj;
 
         ObjectPlaced?.Invoke(obj, position);
+    }
+
+    public BoardTile GetTile(int x, int y)
+    {
+        return tiles[new Vector2Int(x, y)];
+    }
+    public BoardTile GetTile(Vector2Int pos)
+    {
+        return tiles[pos];
+    }
+
+    public void SetTile(BoardTile tile, Vector2Int pos)
+    {
+        tiles[pos] = tile;
+    }
+
+    public void SetTile(BoardTile tile, int x, int y)
+    {
+        tiles[new Vector2Int(x, y)] = tile;
     }
 }

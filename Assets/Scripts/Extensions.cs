@@ -21,5 +21,19 @@ public static class Extensions
         return new Vector2(v.x, v.y);
     }
 
+    public static Vector3Int WithZ(this Vector2Int v, int z)
+    {
+        return new Vector3Int(v.x, v.y, z);
+    }
+
+    public static Vector2Int XY(this Vector3Int v)
+    {
+        return new Vector2Int(v.x, v.y);
+    }
+
+    public static RectInt XY(this BoundsInt b)
+    {
+        return new RectInt(b.position.XY(), b.size.XY());
+    }
 }
 

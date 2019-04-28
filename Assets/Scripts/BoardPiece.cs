@@ -11,7 +11,7 @@ public class BoardPiece : MonoBehaviour
     {
         BoardObject = new BoardObject(BoardManager.Current.Board);
 
-        BoardManager.Current.Board.Place(BoardObject, new Vector2Int(2, 2));
+        BoardManager.Current.Board.Place(BoardObject, BoardManager.Current.tilemap.WorldToCell(transform.position).XY());
     }
 
     private void OnEnable()
