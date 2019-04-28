@@ -7,7 +7,7 @@ using UnityEngine;
 
 public static class Extensions
 {
-    public static T Get<T, TKey>(this Dictionary<TKey, T> dict, TKey key)
+    public static T GetOrDefault<T, TKey>(this Dictionary<TKey, T> dict, TKey key)
     {
         if (dict.TryGetValue(key, out var val))
         {

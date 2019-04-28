@@ -397,8 +397,6 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 25d3e8efb3c020945af0a9be16cd2d6d, type: 2}
     - {fileID: 11400000, guid: 486ecc42d1e48d04ea6077c8862dd674, type: 2}
     m_values: 0100000000000000
-  tile: {fileID: 0}
-  test: 0
 --- !u!4 &783943761
 Transform:
   m_ObjectHideFlags: 0
@@ -424,7 +422,7 @@ GameObject:
   - component: {fileID: 1688906118}
   - component: {fileID: 1688906117}
   m_Layer: 0
-  m_Name: InputManager
+  m_Name: PlayerManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

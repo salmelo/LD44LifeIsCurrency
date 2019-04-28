@@ -20,7 +20,7 @@ public class Board
 
     public BoardObject GetObjectAt(Vector2Int position)
     {
-        return objects.Get(position);
+        return objects.GetOrDefault(position);
     }
     public BoardObject GetObjectAt(int x, int y)
     {
